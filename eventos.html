@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos — Alphaville Rio Costa do Sol</title>
+  <meta name="description" content="Quadro de avisos e agenda de eventos do Alphaville Rio Costa do Sol.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="https://arcs.com.br/wp-content/uploads/2025/05/cropped-fav-icon-192x192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="eventos">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="conteudo">
+    <section class="phero" style="background-image:url('https://arcs.com.br/wp-content/uploads/2025/05/page-title.jpg')">
+      <div class="container">
+        <nav class="crumbs" aria-label="Você está em"><a href="index.html">Home</a><svg class="i" aria-hidden="true"><use href="#i-right"></use></svg><span>Eventos</span></nav>
+        <p class="eyebrow eyebrow--light">Eventos</p>
+        <h1>Quadro de avisos e eventos</h1>
+        <p>Comunicados da Associação e a agenda do Alphaville em um só lugar.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container bp">
+        <div>
+          <div class="toolbar">
+            <div class="filters" id="quadro-filtros" role="group" aria-label="Filtrar o quadro"></div>
+            <span class="sample-pill">conteúdo de exemplo</span>
+          </div>
+          <div class="dayfilter" id="quadro-dia" hidden>
+            <svg class="i" aria-hidden="true"><use href="#i-calendar"></use></svg>
+            <span></span>
+            <button type="button">Limpar</button>
+          </div>
+          <div id="quadro-lista" aria-live="polite"></div>
+        </div>
+
+        <aside class="side" aria-label="Agenda">
+          <div class="cal" id="quadro-cal"></div>
+          <div class="side-card">
+            <h3><svg class="i" aria-hidden="true"><use href="#i-calendar-plus"></use></svg> Agenda no celular</h3>
+            <p>Leve todos os próximos eventos para o calendário do seu celular.</p>
+            <button class="btn btn--primary btn--sm" type="button" id="quadro-ics">Adicionar todos os eventos</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="realizados">
+      <div class="container">
+        <div class="board-head">
+          <div>
+            <p class="eyebrow">Galeria</p>
+            <h2 id="realizados">Eventos realizados</h2>
+          </div>
+        </div>
+        <div class="past" id="quadro-realizados"></div>
+      </div>
+    </section>
+
+    <section class="appband">
+      <div class="container">
+        <h2><svg class="i" aria-hidden="true"><use href="#i-phoneapp"></use></svg> Atenção, associados, já conhece o nosso aplicativo?</h2>
+        <div class="appband__stores">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.formulaweb.MyVillage" target="_blank" rel="noopener">Android</a>
+          <a class="store" href="https://apps.apple.com/br/app/myvillage/id803954678" target="_blank" rel="noopener">iOS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/quadro.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/quadro-ui.js"></script>
+</body>
+</html>
